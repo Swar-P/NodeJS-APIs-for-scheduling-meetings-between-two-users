@@ -6,3 +6,7 @@ A user creation or authentication flow is not implemented. It is assumed that us
 A meeting is always scheduled between 2 people, not more.
 MongoDB is used.
 There is also one unit test for one API endpoint.
+
+To start the server: node app.js
+Then use appropriate URL to call a particular API
+To run test after starting the server: npm run test
