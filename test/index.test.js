@@ -2,7 +2,7 @@ var supertest = require("supertest");
 var should = require("should");
 var server = supertest.agent("http://127.0.0.1:5000");
 
-describe("Unit test for 'seeUsersMeetings' functionality'", function () { //Unit test begin
+describe("Unit test for 'seeUsersMeetings' functionality", function () { //Unit test begin
     it("should return an object and 'meetings' should be a property of the object", function (done) {
         server
             .post("/seeUsersMeetings") // calling 'seeUsersMeetings' api
