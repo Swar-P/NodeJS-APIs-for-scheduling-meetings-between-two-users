@@ -19,4 +19,8 @@ Here is an illustration of a case in which a requested meeting can't be schedule
 
 Here is a screenshot of calling to the API to view another user's meetings. It returns 'meetings' array which contains all scheduled meetings of that user: https://user-images.githubusercontent.com/103904689/163829884-7b39d46a-ce5a-4270-9f0b-f12b8b31c3c0.png.
 
-Illustration of a case where JOI validation fails. In the call to the API to see user's meetings, request body must contain _id and userId. But if this is not the case, JOI validator returs an error: https://user-images.githubusercontent.com/103904689/163831002-78092ea5-3e4f-4a9f-842e-4a92df6ca37b.png
+Illustration of a case where JOI validation fails. In the call to the API to see user's meetings, request body must contain _id and userId. But if this is not the case, JOI validator returs an error: https://user-images.githubusercontent.com/103904689/163831002-78092ea5-3e4f-4a9f-842e-4a92df6ca37b.png.
+
+Illustration of passing the test: https://user-images.githubusercontent.com/103904689/163837917-c03721e2-b6a2-4151-9d26-36a6ea420502.png.
+
+Illustration of failing the test after changing the code such that it doesn't return an object that contains 'meetings' property: https://user-images.githubusercontent.com/103904689/163839376-f6b4911d-60bf-46da-9050-6486cdfc5932.png.
